@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lozino</title>
+    <script>
+      try {
+        sessionStorage.setItem('lozino:spa-redirect', window.location.pathname + window.location.search + window.location.hash);
+      } catch (_) {}
+      window.location.replace('/');
+    </script>
+  </head>
+  <body></body>
+</html>
